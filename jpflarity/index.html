@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>J.P. Flarity, Science Fiction Author</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" media="all" href="jpflarity.css" />
+	<script src="jquery.js"></script>
+	<script src="bootstrap.js"></script>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-app="jpflarityApp" ng-controller="jpflarityController" >
+<div id="page">
+	<div id="header">
+		<img src="sunset-banner.jpg" alt="sunset image" />
+		<h1 id="mainTitle">J.P. Flarity</h1>
+		<p id="breakFromTheReal">break from the real.</p>
+	</div>
+	
+	<div id="navBar">
+		<ul>
+			<li id="homeButton" ng-click="goHome()">Home</li>
+			<li id="aboutButton" ng-click="goAbout()">About</li>
+			<li id="pubButton" ng-click="goPubs()">Publications</li>
+			<li id="orgButton" ng-click="goOrgs()">Organizations</li>
+			<li id="contactButton" ng-click="goContact()">Contact</li>
+		</ul>
+	</div>
+	
+	<div id="content">
+	
+		<div id="homeDiv" ng-show="showHome">
+			<h3>Welcome to my website</h3>
+
+			<p>It all starts with you, my reader, and your wonderful brain. Synapses are firing. Optical 
+			receptors sort data. Pixels become letters. Words become sentences. Then chunks of 
+			text grow into a dangerous thing: ideas.</p>
+
+			<p>Who is J.P. Flarity?</p>
+
+			<p>Author or philosopher? Amalgamation or automaton?</p>
+
+			<p>It is up to you to decide. But know this. Stories, like websites, contain one prime 
+			element that is essentially the same:</p>
+
+			<p>They are an illusion.</p>
+
+			<p>Happy reading – J.P.</p>
+		</div>
+		
+		<div id="aboutDiv" ng-show="showAbout">
+			<h3>About</h3>
+			<p>We live as something more than animals, something less than the divine, imprisoned in
+			a shell of meat until we hit our expiration date, burdened with the ultimate condition of 
+			our existence:</p>
+
+			<p>the ability to choose.</p>
+
+			<p>Why did we do this to ourselves? Was omnipotence so tiring? How does this affect the 
+			meaning we inject into our lives? And ultimately, what’s the point?</p>
+
+			<p>I write fiction as an attempt to answer the unanswerable questions. Currently, the pile 
+			of rejection letters grows into the ionosphere, but I will keep climbing this mountain of 
+			skulls, bashing my head against the keyboard until the lock opens.</p>
+			
+			<p>When I am not writing, I exist as an “apparent human” in the Pacific Northwest, where I 
+			humble myself teaching middle school and live in the woods with a herd of elk.</p>
+		</div>
+		
+		<div id="pubsDiv" ng-show="showPubs">
+			<h3>Publications</h3>
+			<ol>
+				<a href="http://365tomorrows.com/04/14/infantem-gradus/">
+					<li>“Infantem Gradus” – 365tomorrows.com</li>
+				</a>
+			</ol>
+			<p>In group writes:</p>
+			<ol>
+				<a href="http://tetheredbyletters.com/pubs/weekly-publications/74-group-writer/dually-noted/392-cordyceps">
+					<li>“Cordyceps” – tetheredbyletters.com</li>
+				</a>
+				<a href="http://tetheredbyletters.com/pubs/weekly-publications">
+					<li>“Lucinda’s Fertility” – tetheredbyletters.com</li>
+				</a>
+			</ol>
+		</div>
+		
+		<div id="orgsDiv" ng-show="showOrgs">
+			<h3>Organizations</h3>
+			<ol>
+				<a href="http://www.meetup.com/Speculative-Fiction-Writers-South-King-County/">
+					<li>South King County Speculative Fiction Writers – Organizer</li>
+				</a>
+				<a href>
+					<li>The Author’s Co-operative: Pacific Northwest</li>
+				</a>
+				<a href="http://www.meetup.com/North-Seattle-SFF-Writers/">
+					<li>North Seattle SciFi and Fantasy Writing Fellowship – Member</li>
+				</a>
+			</ol>
+		</div>
+		
+		<div id="contactDiv" ng-show="showContact">
+			<h3>Contact Me</h3>
+			<p><a href="mailto:jpflarity@gmail.com">jpflarity@gmail.com</a></p>
+		</div>
+		
+	</div>
+	
+</div><!-- #page -->
+
+
+</body>
+</html>
