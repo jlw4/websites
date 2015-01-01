@@ -15,23 +15,31 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
 	<title>J.P. Flarity, Science Fiction Author</title>
+
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="lightbox/css/lightbox.css">
 	<link rel="stylesheet" type="text/css" media="all" href="jpflarity.css" />
-	<script src="jquery.js"></script>
-	<script src="bootstrap.js"></script>
-    <script src="angular.js"></script>
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.min.js"></script>
+    <script src="lightbox/js/lightbox.min.js"></script>
     <script src="app.js"></script>
 </head>
 
 <body ng-app="jpflarityApp" ng-controller="jpflarityController" >
 <div id="page">
 	<div id="header">
-		<img src="sunset-banner.jpg" alt="sunset image" />
+		<img src="img/sunset-banner.jpg" alt="sunset image" />
 		<h1 id="mainTitle">J.P. Flarity</h1>
 		<p id="breakFromTheReal">break from the real.</p>
 	</div>
 	
-	<div id="navBar">
+	<div id="navBar" class="noSelect">
+		<a href="https://www.facebook.com/profile.php?id=100006839355689"><img src="img/facebook_36.png" /></a>
+		<a href="https://twitter.com/jpflarity"><img src="img/twitter_36.png" /></a>
+		<a href="http://www.goodreads.com/user/show/35731492-j-p-flarity"><img src="img/goodreads_36.png" /></a>
+		<a href="http://www.scribophile.com/authors/j-p-flarity/"><img src="img/scrib_36.png" /></a>
 		<ul>
 			<li id="homeButton" ng-click="goHome()">Home</li>
 			<li id="aboutButton" ng-click="goAbout()">About</li>
@@ -44,11 +52,14 @@
 	<div id="content">
 	
 		<div id="homeDiv" ng-show="showHome">
-			<h3>Welcome to my website</h3>
+			<h3>Welcome to my website.</h3>
 
 			<p>It all starts with you, my reader, and your wonderful brain. Synapses are firing. Optical 
 			receptors sort data. Pixels become letters. Words become sentences. Then chunks of 
-			text grow into a dangerous thing: ideas.</p>
+			text grow into a dangerous thing:
+			</p>
+
+			<p>Ideas.</p>
 
 			<p>Who is J.P. Flarity?</p>
 
@@ -59,16 +70,20 @@
 
 			<p>They are an illusion.</p>
 
-			<p>Happy reading – J.P.</p>
+			<p>Happy reading</p>
+
+			<p>– J.P.</p>
 		</div>
 		
 		<div id="aboutDiv" ng-show="showAbout">
-			<h3>About</h3>
+
+			<a href="img/profile_original.jpg" data-lightbox="profile"><img src="img/profile_240.png" /></a>
+
 			<p>We live as something more than animals, something less than the divine, imprisoned in
 			a shell of meat until we hit our expiration date, burdened with the ultimate condition of 
 			our existence:</p>
 
-			<p>the ability to choose.</p>
+			<p>The ability to choose.</p>
 
 			<p>Why did we do this to ourselves? Was omnipotence so tiring? How does this affect the 
 			meaning we inject into our lives? And ultimately, what’s the point?</p>
@@ -78,14 +93,17 @@
 			skulls, bashing my head against the keyboard until the lock opens.</p>
 			
 			<p>When I am not writing, I exist as an “apparent human” in the Pacific Northwest, where I 
-			humble myself teaching middle school and live in the woods with a herd of elk.</p>
+			humble myself teaching and live in the woods with a herd of elk.</p>
 		</div>
 		
 		<div id="pubsDiv" ng-show="showPubs">
-			<h3>Publications</h3>
+			<h3>Short Stories</h3>
 			<ol>
 				<a href="http://365tomorrows.com/04/14/infantem-gradus/">
 					<li>“Infantem Gradus” – 365tomorrows.com</li>
+				</a>
+				<a href="http://365tomorrows.com/12/27/they-are-called-emotions/">
+					<li>“They Are Called Emotions” – 365tomorrows.com</li>
 				</a>
 			</ol>
 			<p>In group writes:</p>
@@ -100,22 +118,19 @@
 		</div>
 		
 		<div id="orgsDiv" ng-show="showOrgs">
-			<h3>Organizations</h3>
 			<ol>
-				<a href="http://www.meetup.com/Speculative-Fiction-Writers-South-King-County/">
-					<li>South King County Speculative Fiction Writers – Organizer</li>
-				</a>
-				<a href>
-					<li>The Author’s Co-operative: Pacific Northwest</li>
-				</a>
-				<a href="http://www.meetup.com/North-Seattle-SFF-Writers/">
-					<li>North Seattle SciFi and Fantasy Writing Fellowship – Member</li>
-				</a>
+				
+				<li>
+					<a href="http://www.meetup.com/Speculative-Fiction-Writers-South-King-County/">South King County Speculative Fiction Writers</a> – Organizer
+				</li>
+				<li>
+					<a href="http://www.meetup.com/North-Seattle-SFF-Writers/">North Seattle SciFi and Fantasy Writing Fellowship</a> – Member (since 2012)
+				</li>
+				<li>The Author’s Co-operative: Pacific Northwest</li>
 			</ol>
 		</div>
 		
 		<div id="contactDiv" ng-show="showContact">
-			<h3>Contact Me</h3>
 			<p><a href="mailto:jpflarity@gmail.com">jpflarity@gmail.com</a></p>
 		</div>
 		

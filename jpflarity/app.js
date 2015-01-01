@@ -16,6 +16,8 @@ myApp.controller('jpflarityController', ['$scope', '$location', '$timeout', func
 	
 	$scope.highlightButton = function(button) {
 		button.css("background", "#404040");
+		button.css("box-shadow", "2px -2px 0 #AAAAAA, -2px -2px 0 #AAAAAA");
+		button.css("border-bottom", "2px solid #404040");
 	};
 	
 	var clearFlags = function() {
@@ -25,6 +27,8 @@ myApp.controller('jpflarityController', ['$scope', '$location', '$timeout', func
 		$scope.showOrgs = false;
 		$scope.showContact = false;
 		$('#navBar li').css("background", "#0D0103");
+		$('#navBar li').css("box-shadow", "none");
+		$('#navBar li').css("border-bottom", "2px solid #AAAAAA");
 	}
 	
 	$scope.goHome = function() {
@@ -61,8 +65,6 @@ myApp.controller('jpflarityController', ['$scope', '$location', '$timeout', func
 		$scope.showContact = true;
 		$scope.highlightButton($('#contactButton'));
 	};
-	
-	console.log($location.path());
 	
 	if ($location.path() == "/about")
 	    $scope.goAbout();
