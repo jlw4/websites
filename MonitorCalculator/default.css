@@ -1,0 +1,48 @@
+/* By John L. Wilson */
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: monospace;
+	text-align: center;
+}
+
+h1 {
+	font-size: 48pt;
+	font-weight: bold;
+	margin: 10px;
+}
+
+#options {
+	margin-bottom: 10px;
+}
+
+.monitor {
+	border: 4px solid black;
+	width: 0px;
+	height: 0px;
+	background-color: #B4B4B4;
+}
+
+.monitorBox {
+	text-align: left;
+	display: inline-block;
+}
+
+#monitorArea {
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+}
+
+#monitorBox4, #monitorBox5 {
+	display: none;
+}
+
+.monitorOptions {
+	margin-top: 4px;
+}
+
+#monitor1, #monitor2 {
+	margin-left: auto;
+}

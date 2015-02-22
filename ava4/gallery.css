@@ -1,0 +1,13 @@
+body {
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+}
+
+body > div {
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	margin: 0 5px;
+}

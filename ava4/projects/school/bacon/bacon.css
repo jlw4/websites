@@ -1,0 +1,54 @@
+/*
+John L Wilson
+CSE 154 AL
+Homework 6 "One Degree of Kevin Bacon"
+
+This is the common css file for the various pages of the One Degree of Kevin Bacon website
+*/
+
+html {
+	font-family: monospace;
+	color: #595959;
+	text-align: center;
+}
+
+body, tr:nth-child(even) {
+	background-color: #CBD6D5;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid #CBD6D5;
+}
+
+#frame{
+	box-shadow: 0 0 5px 0 #595959;
+}
+
+#frame, fieldset, table {
+	margin: 1em;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+#frame, body {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#banner, #w3c {
+	background-image: url("https://webster.cs.washington.edu/images/kevinbacon/banner-background.png");
+	padding: 1em;
+	color: white;
+	text-align: left;
+}
+
+tr, table {
+	padding: 8px;
+}
+
+fieldset {
+	width: 24em;
+}

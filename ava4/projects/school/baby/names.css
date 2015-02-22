@@ -1,0 +1,34 @@
+/*
+John L Wilson
+CSE 154 AL
+Assignment #9 "Baby Names"
+This is the main css file for the baby names website
+*/
+
+html {
+	font-size: 12pt;
+	font-family: Georgia, serif;
+}
+
+q {
+	font-style: italic;
+}
+
+table {
+	text-align: center;
+	font-weight: bold;
+}
+
+td {
+	height: 250px;
+	vertical-align: bottom;
+}
+
+td div {
+	width: 50px;
+	background-color: #FFBBBB;
+}
+
+.red {
+	color: red;
+}

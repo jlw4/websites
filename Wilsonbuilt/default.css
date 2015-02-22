@@ -1,0 +1,150 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url('images/Wood Background.jpg');
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	font-family: sans-serif;
+	font-size: 13pt;
+	color: black;
+}
+
+/** WRAPPER */
+
+#wrapper-wrapper {
+	text-align: center;
+}
+
+#wrapper {
+	overflow: hidden;
+	width: 1000px;
+	padding: 0;
+	margin: 0px auto;
+	position: relative;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/** HEADER */
+
+#header {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#menu {
+	font-family: Impact, Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	top: -70px;
+	text-align: center;
+}
+
+#menu ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+#menu li {
+	display: inline-block;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+#menu a {
+	color: white;
+	text-decoration: none;
+	font-size: 18pt;	
+}
+
+#menu a:hover {
+	color: gray;
+}
+
+/** PAGE */
+
+#page {
+	overflow: hidden;
+	padding: 0;
+}
+
+/* Footer */
+
+#footer {
+	overflow: hidden;
+	background: rgb(37, 40, 43);
+	background: rgba(37, 40, 43, 0.85);
+	padding: 10px 0px 10px 0px;
+	color: white;
+	margin-top: 15px;
+}
+
+#footer p {
+	margin: 5px 5px 5px 20px;
+}
+
+#footer a {
+	color: #AEAEAE;
+	margin: 0;	
+}
+
+#footer .link {
+	float: right;	
+}
+
+#footer img {
+	height: 110px;
+}
+
+/* Content */
+
+#content {
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.85);
+	padding: 15px;
+}
+
+h2 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* Slideshow */
+
+#slideshow {
+	position: relative;
+    float: right;
+    width: 300px; 
+    height: 225px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    margin-left: 15px;
+}
+
+#slideshow > div {
+	position: absolute;
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+/* Gallery */
+
+.galleryImage {
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+a img
+{
+  border:none;
+}
+
+#galleryBox {
+	text-align: center;
+}

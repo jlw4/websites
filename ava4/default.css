@@ -1,0 +1,80 @@
+html {
+	font-family: monospace;
+}
+
+body {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+a {
+
+}
+
+#welcome {
+	margin: 300px auto 0;
+	font-size: 30pt;
+	text-align: center;
+	display: none;
+}
+
+#content {
+	animation: fadein 2s;
+	-moz-animation: fadein 2s;
+	-webkit-animation: fadein 2s;
+	-o-animation: fadein 2s;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+a:hover {
+	color:red;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}​
